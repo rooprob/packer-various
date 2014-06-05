@@ -32,6 +32,9 @@ cat > /etc/hosts<<EOF
 169.254.169.254 metadata.google.internal metadata
 EOF
 
+# XXX
+cp /usr/share/google/set-hostname /etc/dhcp/dhclient-exit-hooks.d/set-hostname
+
 ## versions prior to 1.0.4 cause performance issues
 apt-get -y remove irqbalance
 
