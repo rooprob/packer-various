@@ -27,6 +27,6 @@ if [ "$EYAML_VER" != "Hiera-eyaml version 1.3.8" ]; then
 fi
 
 if ! id puppet 2>&1 > /dev/null ; then
-    groupadd puppet
-    useradd -g puppet -s /sbin/puppet -d /var/lib/puppet puppet
+    puppet master --mkusers
+    killall -9 puppet
 fi
