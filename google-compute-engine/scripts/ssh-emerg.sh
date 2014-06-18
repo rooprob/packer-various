@@ -1,8 +1,7 @@
 #!/bin/bash
 #
 # Install another SSH server on a high port. Use this for debugging an install.
-# Also see about disabling vagrant-cleanup to permit one password based user
-# login.
+# Also see cleanup.sh (userdel) to permit one password based user login.
 
 # Should remove from production (however default security-groups will prevent
 # leaving a port open).
