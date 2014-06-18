@@ -45,10 +45,10 @@
             "1024m"
          ]
       ],
-      "shutdown_command": "echo '1qazvagrantxsw2'|sudo -S shutdown -P now",
-      "ssh_password": "1qazvagrantxsw2",
+      "shutdown_command": "echo 'secret64instalusr'|sudo -S shutdown -P now",
+      "ssh_password": "secret64instalusr",
       "ssh_port": 22,
-      "ssh_username": "vagrant",
+      "ssh_username": "64instalusr",
       "ssh_wait_timeout": "10000s",
       "type": "qemu",
       "vm_name": "ubuntu-12.04.4-server-amd64"
@@ -56,18 +56,17 @@
   ],
   "provisioners": [
     {
-      "execute_command": "echo '1qazvagrantxsw2'|{{.Vars}} sudo -S -E bash '{{.Path}}'",
+      "execute_command": "echo 'secret64instalusr'|{{.Vars}} sudo -S -E bash '{{.Path}}'",
       "scripts": [
         "scripts/update.sh",
+        "scripts/essential.sh",
         "scripts/networking.sh",
+        "scripts/ssh-emerg.sh",
         "scripts/sudoers.sh",
-        "scripts/vagrant.sh",
-        "scripts/vmtools.sh",
         "scripts/postfix.sh",
         "scripts/ruby18.sh",
-        "scripts/puppet-user.sh",
-        "scripts/essential.sh",
-        "scripts/ssh-emerg.sh",
+        "scripts/puppet-client.sh",
+        "scripts/puppet-server.sh",
         "scripts/google-compute-image-packages.sh",
         "scripts/google-cloud-sdk.sh",
         "scripts/google-gce-setup.sh",
