@@ -45,10 +45,10 @@
             "1024m"
          ]
       ],
-      "shutdown_command": "echo 'secret64instalusr'|sudo -S shutdown -P now",
-      "ssh_password": "secret64instalusr",
+      "shutdown_command": "echo 'secretstarship99'|sudo -S shutdown -P now",
+      "ssh_password": "secretstarship99",
       "ssh_port": 22,
-      "ssh_username": "64instalusr",
+      "ssh_username": "starship",
       "ssh_wait_timeout": "10000s",
       "type": "qemu",
       "vm_name": "ubuntu-12.04.4-server-amd64"
@@ -56,7 +56,7 @@
   ],
   "provisioners": [
     {
-      "execute_command": "echo 'secret64instalusr'|{{.Vars}} sudo -S -E bash '{{.Path}}'",
+      "execute_command": "echo 'secretstarship99'|{{.Vars}} sudo -S -E bash '{{.Path}}'",
       "scripts": [
         "scripts/update.sh",
         "scripts/essential.sh",

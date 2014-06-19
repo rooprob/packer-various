@@ -30,8 +30,8 @@ unset HISTFILE
 rm ~/.bash_history /home/*/.bash_history
 
 # Remove user before cutting a production "gold" master.
-userdel -r 64instalusr
-groupdel -r 64instalusr
+userdel -r starship
+groupdel -r starship
 
 # Block until the empty file has been removed, otherwise, Packer
 # will try to kill the box while the disk is still full and that's bad
