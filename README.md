@@ -125,4 +125,11 @@ Note the -machine setting if you do not have KVM acceleration support.
 Note the -redir for port mapping SSH to localhost; you may like to adjust for
 the emergency SSH on 2022.
 
+Known Issues
+------------
+The user in your $USER variable, which executes gcutil addinstance, is
+automatically added to the instance. If you happen to also use puppet to
+configure your users and you've SSH'd in to the image while it's running, you
+will conflict, requiring some corrective sysadm action.
+
 
