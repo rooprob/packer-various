@@ -51,7 +51,7 @@ BSD tar on OSX does not work)
 
 Upload into Google Cloud Storage
 
-    $ gsutil cp my-image.tar.gz gs://my-images
+    $ gsutil cp u12gce1-5.tar.gz gs://gce-images
 
 Install into Google Compute Engine
 
