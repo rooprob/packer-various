@@ -4,7 +4,7 @@
 # Configuration is determined via Facter Facts passed in to the gceutil
 # addinstance.
 #
-# Author: Robert Fieldling <robert.fieldling@divide.com>
+# Author: Robert Fielding <fieldingrp@gmail.com>
 # Date: 20140603
 
 set -x
