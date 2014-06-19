@@ -67,6 +67,7 @@ This script makes use of metadata "facts" passed in at boot time to customize
 integration into our Puppet environment.
 
 Example only,
+
     $ gcutil addinstance my-inst1 --machine_type=n1-standard-1 \
         --image=u12gce1-5 \
         --zone=us-central1-a \
