@@ -51,7 +51,7 @@
       "ssh_username": "starship",
       "ssh_wait_timeout": "10000s",
       "type": "qemu",
-      "vm_name": "ubuntu-12.04.4-server-amd64"
+      "vm_name": "disk"
     }
   ],
   "provisioners": [
